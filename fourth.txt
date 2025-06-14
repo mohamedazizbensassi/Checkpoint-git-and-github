@@ -1,0 +1,134 @@
+lenovo@DESKTOP-I7BKK1A MINGW64  ~
+$ pwd
+/c/Users/hp
+lenovo@DESKTOP-I7BKK1A MINGW64  ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+'Menu Démarrer'@
+'Mes documents'@
+ Modèles@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{2ad838bc-efea-11ee-a54d-000d3a94eaa1}.TM.blf
+ NTUSER.DAT{2ad838bc-efea-11ee-a54d-000d3a94eaa1}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{2ad838bc-efea-11ee-a54d-000d3a94eaa1}.TMContainer00000000000000000002.regtrans-ms
+'Nouveau dossier'/
+ OneDrive/
+'OneDrive - Emaa'/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ TEST/
+ Videos/
+"Voisinage d'impression"@
+'Voisinage réseau'@
+ battery-report.html
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+lenovo@DESKTOP-I7BKK1A MINGW64  ~
+$ cd Links
+
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links
+$ mkdir learn_git
+
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links
+$ cd learn_git
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links/learn_git
+$ touch third.txt
+
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links/learn_git
+$ git init
+Initialized empty Git repository in C:/Users/hp/Links/learn_git/.git/
+
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links/learn_git (master)
+$ git add third.txt
+
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links/learn_git (master)
+$ git commit -m "adding third.txt"
+[master (root-commit) c1522db] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links/learn_git (master)
+$ git log
+commit c1522dba433b3fa52516740beeaba4b785cdb703 (HEAD -> master)
+Author: YOUR NAME <YOUR EMAIL>
+Date:   Wed Jan 1 12:21:03 2025 +0100
+
+    adding third.txt
+
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links/learn_git (master)
+$ touch fourth.txt
+
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links/learn_git (master)
+$ git add fourth.txt
+
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links/learn_git (master)
+$ git commit -m "adding fourth.txt"
+[master 6391d52] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links/learn_git (master)
+$ rm third.txt
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links/learn_git (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links/learn_git (master)
+$ git add .
+
+lenovo@DESKTOP-I7BKK1A MINGW64  ~/Links/learn_git (master)
+$ git commit -m "removing third.txt"
+[master c5db578] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+hp@Chaouki MINGW64 ~/Links/learn_git (master)
+$ git log
+commit c5db578a3ca3550eda63c43e9f53210bc91e685c (HEAD -> master)
+Author: YOUR NAME <YOUR EMAIL>
+Date:   Wed Jan 1 12:40:03 2025 +0100
+
+    removing third.txt
+
+commit 6391d5200f177740646e80905633ad4c60819f21
+Author: YOUR NAME <YOUR EMAIL>
+Date:   Wed Jan 1 12:38:45 2025 +0100
+
+    adding fourth.txt
+
+commit c1522dba433b3fa52516740beeaba4b785cdb703
+Author: YOUR NAME <YOUR EMAIL>
+Date:   Wed Jan 1 12:21:03 2025 +0100
+
+    adding third.txt
+
+hp@Chaouki MINGW64 ~/Links/learn_git (master)
+$ git config --global core.pager "cat"
+
+hp@Chaouki MINGW64 ~/Links/learn_git (master)
+$ git config --global --list
+user.name=YOUR NAME
+user.email=YOUR EMAIL
+core.pager=cat
+
+hp@Chaouki MINGW64 ~/Links/learn_git (master)
+$ ^C
+
+hp@Chaouki MINGW64 ~/Links/learn_git (master)
+$
